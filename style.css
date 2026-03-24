@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 80px 1fr 60px; /* Header | Conteúdo | Footer */
-    grid-template-columns: 200px 1fr;  /* Sidebar | Main */
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 200px 1fr; 
     grid-template-areas:
         "header header"
         "sidebar main"
@@ -50,7 +50,7 @@ footer {
     justify-content: center;
 }
 
-/* Links na sidebar */
+
 .side-content {
     display: flex;
     flex-direction: column;
@@ -82,10 +82,9 @@ select,input{
     transition: all 0.6s;
 }
 
-/* Responsivo */
 @media(max-width: 768px) {
         body {
-            grid-template-rows: 80px 4fr 1fr 60px; /* 🔥 importante */
+            grid-template-rows: 80px 4fr 1fr 60px;
             grid-template-columns: 1fr;
             grid-template-areas:
                 "header"
