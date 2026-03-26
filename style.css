@@ -96,9 +96,11 @@ select,input,button{
 }
 
 .sensores-container{
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
 
 }
 
@@ -109,6 +111,17 @@ select,input,button{
     flex-direction: column-reverse;
     width: 400px;
     height: 600px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.sensores2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
     background-color: lightgray;
     padding: 20px;
 }
@@ -160,6 +173,12 @@ select,input,button{
     padding: 5px;
 }
 
+.img{
+    width: 300px;
+    height: 300px;
+    border: solid lightgray;
+}
+
 
 
 @media(max-width: 768px) {
@@ -190,5 +209,21 @@ select,input,button{
         padding: 8px;
         flex-wrap: wrap;
         gap: 10px;
+    }
+
+    .ponte-container{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        border: solid black;
+        
+    }
+
+    .ponte img{
+        width: 300px;
+        height: 300px;
+
     }
 }
